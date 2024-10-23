@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <title>Shoplexer</title>
+        <link rel="stylesheet" href="/Css/main_style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <div class="menu">
+                    <li><a class="a-menu" href="#">Home</a></li>
+                    <li><a class="n_clk" href="Shop.html">Shop</a></li>    
+                    <li><a class="n_clk" href="Used_Shop.html">Used_Shop</a></li>
+                    <li><a class="n_clk" href="#">Business</a></li>
+                    <li><a class="n_clk" href="#">Offers</a></li>
+                    <li><a class="n_clk" href="#">Communicate</a></li>
+                    <input type="text" placeholder="Search">
+                </div>
+                <li>
+                    <select name="" id="rang" class="rang" onchange="window.location.href=this.value;">
+                        <option value="#">Us</option>
+                        <option value="#">Business</option>
+                        <option value="#">Communicate</option>
+                    </select>
+                </li>
+                <button class="sign_out"><a style="text-decoration: none;color: black;" href="/Html/Sign_in.html">Sign out</a></button>
+            </ul>
+        </nav>
+        <div class="intro">
+            <!-- <img src="/Used_shop_producte/images (3).jpeg" alt=""> -->
+            <marquee behavior="" direction="right" scrollamount="13px">
+                <div class="row1">
+                    <div class="card1">
+                        <button class="Toys">
+                            <a href="/Html/Used_Shop.html">Toys</a>
+                        </button>
+                    </div>
+                    <div class="card2">
+                        <button class="Pens">
+                            <a href="Shop.html">Pens</a>
+                        </button>
+                    </div>
+                    <div class="card3">
+                        <button class="Food">
+                            <a href="#">Food</a>
+                        </button>
+                    </div>
+                </div>
+                <div class="row1">
+                    <div class="card1">
+                        <button class="Offer">
+                            <a href="#">Offers</a>
+                        </button>
+                    </div>
+                    <div class="card2">
+                        <button class="Business">
+                            <a href="#">Business</a>
+                        </button>
+                    </div>
+                    <div class="card3">
+                        <button class="Communicate">
+                            <a href="#">Communicate</a>
+                        </button>
+                    </div>
+                </div>
+            </marquee>
+        </div>
+    </body>
+    <script src="main_sys.js"></script>
+</html>

@@ -1,0 +1,226 @@
+*{
+    list-style-type: none;
+}
+
+body{
+    height: 89%;
+    background: linear-gradient(to right, rgb(127, 123, 123),rgb(255, 255, 255));
+    margin: 0;
+    text-decoration: none;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    padding: 2px;
+}
+
+ul{
+    display: flex;
+}
+
+.menu{
+    display: flex;
+    gap: 30px;
+}
+
+.n_clk{
+    text-decoration: none;
+    background-color: black;
+    border-radius: 10px;
+    color: white;
+    border: 2px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 10px 10px;
+}
+
+.n_clk:hover{
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    border: 2px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 10px 10px;
+}
+
+.a-menu{
+    text-decoration: none;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 10px 10px;
+}
+
+/* .a-menu:hover{
+    background-color: rgb(23, 18, 18);
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding: 10px 10px;
+    border-radius: 10px;
+} */
+
+section div{
+    border: 1px, solid, black;
+    padding: 0px;
+    margin: 50px;
+    height: auto;
+    width: 25%;
+    border-radius: 20px;
+    background-color: white;
+    text-align: center;
+    font-family: serif;
+}
+
+section div img{
+    height: 55%;
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+section div h2{
+    color: black;
+}
+
+section div button{
+    width: 100%;
+    background-color: green;
+    font-family: serif;
+    padding: 10px 46% 10px 46%;
+    border: none;
+    margin-bottom: 40px;
+}
+
+section div button:hover{
+    background-color: rgb(11, 152, 11);
+}
+
+section div button:active{
+    background-color: rgb(25, 234, 25);
+}
+
+select{
+    margin-left: 20px;
+}
+
+.sign_out{
+    margin-left: 10px;
+    /* margin-right: 20px; */
+    font-size: 14px;
+}
+
+/* @keyframes in_out{
+    0%{
+        transform: translateY(-200px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0px);
+        opacity: 0;
+    }
+} */
+
+.intro{
+    text-align: center;
+    padding: 5px 40px;
+    width: 92.5.8%;
+    height: 99%;
+    /* background-image: url("/Used_shop_producte/images\ \(3\).jpeg"); */
+    background-size: cover;
+}
+
+.row1{
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+.intro .row1 div{
+    overflow: hidden;
+    display: flex;
+    /* background-image: url(); */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    width: 30%;
+    height: 150px;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    justify-content: center
+}
+
+
+.Toys{
+    width: 100%;
+    background-image: url(/Used_shop_producte/download\ \(4\).jpeg);
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+.Pens{
+    width: 100%;
+    background-image: url(/Used_shop_producte/download\ \(5\).jpeg);
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+.Food{
+    width: 100%;
+    background-image: url(/Used_shop_producte/download\ \(6\).jpeg);
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+.Offer{
+    width: 100%;
+    background-image: url(/Used_shop_producte/download\ \(7\).jpeg);
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+.Business{
+    width: 100%;
+    background-image: url(/Used_shop_producte/download\ \(8\).jpeg);
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+.Communicate{
+    width: 100%;
+    background-image: url(/Used_shop_producte/download\ \(9\).jpeg);
+    background-size: cover;
+    background-position: center;
+    border: none;
+}
+
+.intro img{
+    width: 100%;
+}
+
+.intro button:hover{
+    transform: scale(1.1);
+}
+
+.intro a{
+    text-decoration: none;;
+    color: black;
+    font-size: 50px;
+    padding-top: 40px;
+}
+
+input{
+    width: 350px;
+}
+
+/* marquee:hover{
+    
+} */

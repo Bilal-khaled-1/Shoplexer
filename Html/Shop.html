@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <title>Shoplexer</title>
+    <link rel="stylesheet" href="/Css/Shop.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "W3eLaABKHLCiD9kUG",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <div class="menu">
+                <li><a class="n_clk" href="Main.html">Home</a></li>
+                <li><a class="a-menu" id="shop" onclick="shop_(food)">Shop</a></li>
+                <li><a class="n_clk" id="used_shop" onclick="us_sh(food)">Used_Shop</a></li>
+                <li><a onclick="Cart()" class="n_clk">Cart</a></li>
+                <input id="Search" value="" type="text" placeholder="Search">
+                <button id="Submit_Search">Search</button>
+            </div>
+            <li>
+                <select name="" id="rang" class="rang" onchange="window.location.href=this.value;">
+                    <option value="#">Us</option>
+                    <option value="#">Business</option>
+                    <option value="#">Communicate</option>
+                </select>
+            </li>
+            <button class="sign_out"><a style="text-decoration: none;color: black;" href="/Html/Sign_in.html">Sign
+                    out</a></button>
+        </ul>
+    </nav>
+    <nav id="nav2"
+        style="background: linear-gradient(to bottom, black, rgb(69, 57, 57));text-align: center;align-items: center;display: flex;justify-content: center;"
+        class="nav2">
+        <ul>
+            <div class="menu">
+                <li><a onclick="All()" id="All" class="n_clk" href="#" data-filter="all">All</a></li>
+                <li><a onclick="offers()" id="filter_btn" class="n_clk" href="#" data-filter="offers">Offers</a></li>
+                <li><a onclick="Toys()" id="filter_btn" class="n_clk" href="#" data-filter="toys">Toys</a></li>
+                <li><a onclick="Pens()" id="filter_btn" class="n_clk" href="#" data-filter="pens">Pens</a></li>
+                <li><a onclick="Food()" id="food" class="n_clk" href="#" data-filter="food">food or snacks</a></li>
+            </div>
+            <li>
+                <select style="margin-left: 20px;" id="rang" class="rang" name="" id="">
+                    <option value="">Random</option>
+                    <option value="">Less to High</option>
+                    <option value="">High to Less</option>
+                </select>
+            </li>
+        </ul>
+    </nav>
+    <section class="all_store_pro">
+        <section id="sec_1" class="sec_1">
+            <div id="Pens" class="card">
+                <img class="scale" src="/Used_shop_producte/Pen3.jpg" alt="">
+                <h2>Math Pen!!</h2>
+                <h2>Price: 30 EGP</h2>
+                <button style="margin: 0px 0px 8px;"
+                    onclick="Put_cart('/Used_shop_producte/Pen3.jpg','Math Pen!!','30','Blue pen','8')" id="buy">Add to
+                    cart</button>
+                <h3 style="color: blue;padding: 0;margin: 0px 200px 10px 10px;display: flex;"><span>Blue<span
+                            style="color: black;font-size: 16px;padding-left: 2px;">Pen</span></span><span
+                        style="margin-left: 150px;color: rgb(62, 58, 58);">product:<span
+                            style="padding-left: 2px;color: black;font-size: 20px;">8</span></span></h3>
+            </div>
+            <div id="Food1" class="card">
+                <img class="scale" src="/Used_shop_producte/download (10).jpeg" alt="">
+                <h2>sweet chili</h2>
+                <h2>Price: 7 EGP</h2>
+                <button style="margin: 0px 0px 8px;"
+                    onclick="Put_cart('/Used_shop_producte/download (10).jpeg', 'sweet chili', '7', 'Mediam', '0')"
+                    class="b2" id="buy">Add to cart</button>
+                <h3 style="margin: 0px 0px 10px 40px;display: flex;">Mediam<span
+                        style="margin-left: 35%;color: rgb(62, 58, 58);">product:<span
+                            style="padding-left: 2px;color: black;font-size: 20px;">0</span></h3>
+            </div>
+            <div id="Food2" class="card">
+                <img class="scale" src="/Used_shop_producte/download (11).jpeg" alt="">
+                <h2>cheese</h2>
+                <h2>Price: 7 EGP</h2>
+                <button style="margin: 0px 0px 8px;"
+                    onclick="Put_cart('/Used_shop_producte/download (11).jpeg', 'cheese', '7', 'Mediam', '0')"
+                    class="b2" id="buy">Add to cart</button>
+                <h3 style="margin: 0px 0px 10px 40px;display: flex;">Mediam<span
+                        style="margin-left: 35%;color: rgb(62, 58, 58);">product:<span
+                            style="padding-left: 2px;color: black;font-size: 20px;">0</span></h3>
+            </div>
+        </section>
+        <section style="display: none;" id="sec_2" class="sec_1">
+            <div id="Toys1" class="card" name="Toys">
+                <img class="scale" src="/Used_shop_producte/Lion 2.jpg" alt="">
+                <h2>Lion</h2>
+                <h2>Price: 15 EGP</h2>
+                <button style="margin: 0px 0px 8px;"
+                    onclick="Put_cart('/Used_shop_producte/Lion 2.jpg', 'Lion', '15', '', '1')" class="b2" id="buy">Add
+                    to cart</button>
+                <h3 style="margin: 0px 0px 10px 0px;display: flex;"><span
+                        style="margin-left: 35%;color: rgb(62, 58, 58);">product:<span
+                            style="padding-left: 2px;color: black;font-size: 20px;">1</span></h3>
+            </div>
+            <div id="Toys2" class="card">
+                <img class="scale" src="/Used_shop_producte/face 1.jpg" alt="">
+                <h2>Happy face for hanging</h2>
+                <h2>Price: 15 EGP</h2>
+                <button style="margin: 0px 0px 8px;"
+                    onclick="Put_cart('/Used_shop_producte/face 1.jpg', 'Happy face for hanging', '15', '', '1')"
+                    class="b2" id="buy">Add to cart</button>
+                <h3 style="margin: 0px 0px 10px 0px;display: flex;"><span
+                        style="margin-left: 35%;color: rgb(62, 58, 58);">product:<span
+                            style="padding-left: 2px;color: black;font-size: 20px;">1</span></h3>
+            </div>
+        </section>
+    </section>
+    <div style="overflow: hidden; width: 100%;height: auto;background-color: white ;display: none;" class="Cart"
+        id="Cart">
+        <button class="exit_cart" onclick="exit_cart()"
+            style="border: none;background-color: unset;display: inline;margin-left: 97%;margin-top: 2px;"><img
+                style="width: 20px;height: 20px;" src="/Used_shop_producte/images.png" alt=""></button>
+        <div id="main_cart" style="width: 100%;height: 10px;display: inline;text-align: center;">
+
+        </div>
+        <div style="text-align:center;" class="toCoppy" id="toCopy" dir="auto">
+            <textarea name="" id="" style="width: 100%;margin-top: 10px;height: 50px;"></textarea>
+            <p>Copy all of that</p>
+        </div>
+        <hr class="hr">
+        <a href="Buy.html"><button id="Buy_a"
+                style="display: none;width: 100%;background-color: rgb(95, 255, 95);">Buy</button></a>
+    </div>
+
+    <script src="/JavaScript/Shop.js"></script>
+</body>
+
+</html>
